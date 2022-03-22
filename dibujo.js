@@ -2,6 +2,9 @@ var texto = document.getElementById("texto_lineas");
 var boton = document.getElementById("botoncito");
 boton.addEventListener("click", dibujoPorClick);
 
+const botonBorrar = document.getElementById("botonLimpia");
+botonBorrar.addEventListener("click", limpiarCanvas);
+
 var d = document.getElementById("dibujito");
 var ancho = d.width;
 var lienzo = d.getContext("2d");
@@ -39,4 +42,10 @@ function dibujoPorClick()
   dibujarLinea(colorcito, 1, 299, 299, 299);
   dibujarLinea(colort, 299, 1, 1, 1);
   dibujarLinea(colort, 299, 299, 299, 1);
+}
+
+function limpiarCanvas() {
+  lienzo.clearRect(0, 0, d.width, d.height);
+  dibujar("black", 1, 0, 0, 300);
+  dibujar("black", 1, 300, 300, 300);
 }
