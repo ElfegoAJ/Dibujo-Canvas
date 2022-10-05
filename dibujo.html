@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/sketchy/bootstrap.min.css" integrity="sha384-RxqHG2ilm4r6aFRpGmBbGTjsqwfqHOKy1ArsMhHusnRO47jcGqpIQqlQK/kmGy9R" crossorigin="anonymous">
     <meta charset="utf-8" />
     <title>Dibujando con Canvas</title>
   </head>
   <body>
     <h1>Dibujando Tipo Torre Eiffel</h1>
-    <p>
+    <p class="text-primary">
       ¿Cuántas lineas quieres? 
-      <input type = "text" id = "texto_lineas"/>
-      <input type = "button" value ="Da clic aqui para dibujar" id = "botoncito"/>
+        <input type = "text" id = "texto_lineas"/>
+        <input type = "button" value ="Da clic aqui para dibujar" id = "botoncito" class="btn btn-success"/>    
     </p>
-    <p>(Se recomienda mayor o igual a 15) Si pones menos no pasa nada pero se ve feo XD</p>
+    <p class="text-danger">(Se recomienda mayor o igual a 15) Si pones menos no pasa nada pero se ve feo XD</p>
     <canvas widh="300" height="300" id="dibujito"></canvas>
-    <p>Asi queda tu dibujo</p>
-    <input type = "button" value ="Da clic aqui para limpiar" id = "botonLimpia"/>
+    <p class="text-success">Asi queda tu dibujo</p>
+    <input type = "button" value ="Da clic aqui para limpiar" id = "botonLimpia" class="btn btn-warning"/>
     <script src="dibujo.js"></script>
   </body>
 </html>
