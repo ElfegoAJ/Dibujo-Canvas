@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/sketchy/bootstrap.min.css" integrity="sha384-RxqHG2ilm4r6aFRpGmBbGTjsqwfqHOKy1ArsMhHusnRO47jcGqpIQqlQK/kmGy9R" crossorigin="anonymous">
-    <meta charset="utf-8" />
-    <title>Dibujando con Canvas</title>
-  </head>
-  <body>
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/sketchy/bootstrap.min.css"
+    integrity="sha384-RxqHG2ilm4r6aFRpGmBbGTjsqwfqHOKy1ArsMhHusnRO47jcGqpIQqlQK/kmGy9R" crossorigin="anonymous">
+  <meta charset="utf-8" />
+  <title>Dibujando con Canvas</title>
+</head>
+
+<body>
+  <div class="container">
     <h1>Dibujando Tipo Torre Eiffel</h1>
     <p class="text-primary">
-      ¿Cuántas lineas quieres? 
-        <input type = "text" id = "texto_lineas" maxlength="4" minlength="2" placeholder="Solo numeros por fa"/>
-        <input type = "button" value ="Da clic aqui para dibujar" id = "botoncito" class="btn btn-success"/>    
+      ¿Cuántas lineas quieres?
+      <input type="text" id="texto_lineas" maxlength="4" minlength="2" placeholder="Solo numeros por fa" />
+      <input type="button" value="Da clic aqui para dibujar" id="botoncito" class="btn btn-success" />
     </p>
     <p class="text-danger">(Se recomienda mayor o igual a 15 y menor a 1000) Si no, no pasa nada pero se ve feo XD</p>
-    <div class="card">
-      <div class="card_body">
-        <p></p>
-        <canvas widh="300" height="300" id="dibujito"></canvas>
-        <p class="text-success">Asi queda tu dibujo</p>
+      <div class="card">
+        <div class="card_body">
+          <p></p>
+          <canvas widh="300" height="300" id="dibujito"></canvas>
+          <p class="text-success">Asi queda tu dibujo</p>
       </div>
     </div>
     <p></p>
-    <input type = "button" value ="Da clic aqui para limpiar" id = "botonLimpia" class="btn btn-warning"/>
+    <input type="button" value="Da clic aqui para limpiar" id="botonLimpia" class="btn btn-warning" />
     <script src="dibujo.js"></script>
-  </body>
+    <p></p>
+    <div class="alert alert-dismissible alert-success" style="width: 300px; height: 75px;">
+      <strong>Bien hecho! Gracias por usarlo.</strong>
+      <p>
+        Elfego Juarez <a href="https://github.com/ElfegoAJ" class="alert-link">en GitHub</a>.
+      </p>
+    </div>
+</body>
+</div>
+
 </html>
