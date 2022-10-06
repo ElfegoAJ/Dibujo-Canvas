@@ -46,6 +46,7 @@ function dibujoPorClick()
 
 function limpiarCanvas() {
   lienzo.clearRect(0, 0, d.width, d.height);
-  dibujar("black", 1, 0, 0, 300);
-  dibujar("black", 1, 300, 300, 300);
+  dibujarLinea("white", 1, 0, 0, 300);
+  dibujarLinea("white", 1, 300, 300, 300);
+  console.log("Limpiado")
 }
